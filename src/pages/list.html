@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/am-pagination.css">
+
+    <script src="../lib/jQuery/jquery.min.js"></script>
+    <script src="../lib/jQuery/am-pagination.js"></script>
+    <style>
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        #list {
+            width: 100px;
+            height: 40px;
+            background-color: purple;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .li_box {
+            display: none;
+            padding-top: 100px;
+        }
+
+        .li_box ul li {
+            margin: 5px 2.5px;
+            float: left;
+            width: 121px;
+            height: 400px;
+
+        }
+
+        
+        
+
+
+        .sc {
+            width: 200px;
+            height: 60px;
+            background-color: hotpink;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* 单行文本溢出省略号显示 */
+        .text_ellipsis {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <p id="list">加载所有商品</p>
+        
+        <div class="sc">查看购物车</div>
+    </div>
+    <div class="li_box">
+        <ul>
+
+        </ul>
+    </div>
+
+
+
+</body>
+<script src="../js/fz.js"></script>
+<script>
+    var n = $(".num").html()
+    $.ajax({
+        url: "../json/list.json",
+        dataType: "json",
+        success: function (shuju) {
+
+            $.each(shuju, function (ind, val) {
+                $(".li_box ul").append(`<li>
+                    <a href="#">
+                    <img src="${val.图片}" alt="" class="Img">
+                    </a>
+                    <p class="tit text_ellipsis">${val.标题}</p>
+                    <p class="wxp">${val.bxlistt12}</p>
+                    <p class="QBj">${val.bxlistt1}${val.bxlistt11}</p>
+                    <button class="jr">${val.btngreen}</button>
+                </li>`)
+            })
+            $(".Img").click(function () {
+                location.href = "./xq.html"
+            })
+        }
+    })
+
+
+
+    $("#list").click(function () {
+        $(".li_box").css("display", "block")
+    })
+
+
+    //点击查看购物车,进入购物车页面
+    $('.sc').click(function () {
+        location.href = "./che.html"
+    })
+
+
+    $(".jr").click(function () {
+        add()
+        $.ajax({
+            url: '../interface/addwq.php',
+            data: {
+                id: ind,
+                name: tit,
+                price: bxlistt12,
+                img: imgs,
+
+            },
+            success: function (res) {
+                if (res.code) {
+                    alert('商品加入成功')
+                }
+            },
+            dataType: 'json'
+        })
+        console.log(ind);
+    })
+</script>
+
+</html>

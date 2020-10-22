@@ -1,0 +1,86 @@
+@charset "utf-8";
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr,acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header,hgroup, menu, nav, output, section, summary, time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0
+}
+
+*{
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: "微软雅黑";
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+a,
+u {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+input {
+    outline: none;
+}
+
+img {
+    display: block;
+    border: 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/* 封装好类名 */
+.border_none {
+    border: none !important;
+}
+
+.bg_none {
+    background: none !important;
+}
+
+/* 单行文本溢出省略号显示 */
+.text_ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.cl{
+    clear: both;
+}

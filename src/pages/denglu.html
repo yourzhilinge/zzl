@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".././css/denglu.css">
+</head>
+
+<body>
+    <div class="dl_box">
+        <form id="form">
+            姓名: <br><input type="text" name="user" id="un"><br><br><br>
+
+            密码: <br><input type="password" name="psd" id="pw"><br>
+            <input type="checkbox" id="ck">10天免登陆<br>
+            <input type="submit" value="登录">
+        </form>
+        <br><br><br>
+        <p>还没有账号?<a href="./zhuce.html">注册一个</a></p>
+
+    </div>
+</body>
+<script src="../js/cookie.js"></script>
+<script>
+    var inpU = document.getElementById("un")
+    var inpP = document.getElementById("pw")
+    var inpC = document.getElementById("ck")
+    var form = document.getElementById("form")
+
+    var username = getCookie('name');
+    if (username) {
+        // 如果cookie里面有用户名
+        // 直接把用户名填写到用户名这个文本框里面
+        inpU.value = username;
+    }
+
+    // 2 点击登陆按钮,会触发form表单的提交事件
+    form.onsubmit = function (e) {
+        //阻止浏览器的默认跳转动作
+        e = e || window.event;
+        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+        //手动跳转到login.php
+        if (inpC.checked) {
+            location.href = "../php/denglu.php?username=" + inpU.value + "&password=" + inpP.value +
+                "&expires=10";
+        } else {
+            location.href = "../php/denglu.php?username=" + inpU.value + "&password=" + inpP.value;
+        }
+
+    }
+</script>
+
+</html>

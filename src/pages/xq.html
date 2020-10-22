@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/icon/iconfont.css">
+    <link rel="stylesheet" href="../sass/xq.css">
+    <script src="../lib/jQuery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <style>
+        .edition_con {
+            width: 1190px;
+            margin: 0 auto;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #ccc;
+        }
+
+        .b_img {
+            display: none;
+        }
+       
+        .sc {
+            width: 200px;
+            height: 60px;
+            background-color: hotpink;
+            text-align: center;
+            line-height: 60px;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+        [type=number]{
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head_t">
+            <div class="edition_con hd_con">
+                <div class="hl">
+                    <a href="#"><em class="iconfont icon-shouji2"></em>手机版</a>|
+                    <a href="#">Q币冲值</a>
+                </div>
+                <div class="hr">
+                    <li>你还未登录,请<a href="./denglu.html">登录</a></li>|
+                    <a href="#">我的订单</a>|
+                    <a href="#">个人中心</a>|
+                    <a href="#">帮助中心</a>
+                    <button>游戏导航<i class="iconfont icon-ai-arrow-down"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="head_2">
+            <div class="edition_con hd_2_con">
+                <h1 class="logo"><a href="https://daoju.qq.com/mall/"><img src="../img/logo-seo.png" alt=""></a></h1>
+                <div class="inp">
+
+                    <input type="text" name="" id="ss" placeholder="请选择游戏搜索道具">
+
+                </div>
+                <div class="ims">
+                    <img class="SYS" src="https://game.gtimg.cn/images/lol/v3/logo-public.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="head3">
+            <div class="edition_con nav_con">
+                <a class="nav_a" href="#">首页</a>
+                <a id="lis" class="nav_a" href="#">商品列表</a>
+                <a class="nav_a" href="#">活动中心</a>
+                <a class="nav_a" href="#">聚诚品</a>
+                <a class="nav_a" href="#">手游中心</a>
+                <a class="nav_a" href="#">聚豆商城</a>
+                <a class="nav_a" href="#">个人中心</a>
+                <a class="nav_a" href="./che.html"><i class="iconfont icon-gouwu3"></i>购物车</a>
+            </div>
+        </div>
+        <div class="edition_con u_l">
+            <ul class="ul_a">
+                <a href="">全部</a>
+                <a href="">英雄</a>
+                <a href="">表情</a>
+                <a href="">海克斯</a>
+                <a href="">云顶</a>
+                <a href="">皮肤</a>
+                <a href="">道具</a>
+                <a href="">守卫</a>
+                <a href="">其他</a>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="edition_con">
+
+            <div class="msg">
+                <ul class="tit">天煞劫</ul>
+                <ul>QB价 165.00</ul>
+                <ul>
+                    <li>微信价</li>
+                    <li class="prs"> ¥ 160.00</li>
+                </ul>
+                <ul>期限 永久</ul>
+                <ul>
+                    <li class="jia">加入购物车</li>
+                    <li>赠送</li>
+                </ul>
+            </div>
+            <div class="Img">
+                <img src="https://game.gtimg.cn/images/daoju/app/lol/big/pkg-24783.jpg?_t=1602820235" alt="">
+                <i class="iconfont icon-search fd"></i>
+                <div class="b_img">
+                    <img src="https://game.gtimg.cn/images/daoju/app/lol/big/pkg-24783.jpg?_t=1602820235" alt="">
+                    <i class="iconfont icon-cha cha"></i>
+                </div>
+            </div>
+            <input type="number" value="1" id="num">
+            <div class="sc">查看购物车</div>
+        </div>
+
+    </section>
+
+</body>
+<script src="../js/fz.js"></script>
+<script>
+    $(".fd").click(function () {
+        $(".b_img").css("display", "block")
+         
+    })
+    $(".cha").click(function () {
+        $(".b_img").css("display", "none")
+         
+    })
+
+
+
+        $('.jia').click(function(){
+        $.ajax({
+            url:'../interface/addwq.php',
+            data:{
+                id:'1321324214324',
+                name:"zed",
+                price:160,
+                img:"https://game.gtimg.cn/images/daoju/app/lol/big/pkg-24783.jpg?_t=1602820235",
+                num:$('#num').val()
+            },
+            success:function(res){
+                if(res.code){
+                    alert('商品加入成功')
+                }    
+            },
+            dataType:'json'
+        })
+        })
+        //点击查看购物车,进入购物车页面
+        $('.sc').click(function(){
+            location.href="./che.html"
+        })
+</script>
+
+</html>

@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--引入文件 -->
+    <link rel="stylesheet" href="../lib/icon/iconfont.css">
+    <link rel="stylesheet" href="../css/gg.css">
+    <link rel="stylesheet" href="../lib/swiper/swiper.css">
+    <link rel="stylesheet" href="../sass/txdj.css">
+    <script src="../lib/jQuery/jquery.min.js"></script>
+    <script src="../lib/swiper/swiper.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../lib/jQuery/jquery.min.js"></script>
+    <script src="../js/sy.js"></script>
+    <style>
+        /* swipe */
+        .swiper-container {
+            width: 770px;
+            height: 330px;
+        }
+
+        /* 版心 */
+        .edition_con {
+            width: 1190px;
+            margin: 0 auto;
+        }
+
+        body {
+            background: #f3f4f6 url(../img/wrap_bg.png) no-repeat 0 185px;
+        }
+
+        a {
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="head_1">
+            <div class="edition_con hd_1_con">
+                <div class="h1_l">
+                    <a href="#"><em class="iconfont icon-shouji2"></em>手机版</a>|
+                    <a href="#">Q币冲值</a>
+                </div>
+                <div class="h1_r">
+                    <li>你还未登录,请<a href="./denglu.html">登录</a></li>|
+                    <a href="#">我的订单</a>|
+                    <a href="#">个人中心</a>|
+                    <a href="#">帮助中心</a>
+                    <button>游戏导航<i class="iconfont icon-ai-arrow-down"></i></button>
+                </div>
+            </div>
+
+        </div>
+        <div id="head_2">
+            <div class="edition_con hd_2_con">
+                <h1 class="logo"><a href="https://daoju.qq.com/mall/"><img src="../img/logo-seo.png" alt=""></a></h1>
+                <div class="inp">
+                    <button>选择游戏<i class="iconfont icon-ai-arrow-down"></i></button>
+                    <input type="text" name="" id="ss" placeholder="请选择游戏搜索道具">
+                    <div class="fr"><i class="iconfont icon-search"></i>
+                    </div>
+                </div>
+                <div class="ims">
+                    <img class="SYS" src="../img/tou.jpg" alt="">
+                    <img class="SYS" src="../img/zsdjc.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="head3">
+            <div class="edition_con nav_con">
+                <a class="nav_a" href="#">所有游戏分类</a>
+                <a class="nav_a" href="#">首页</a>
+                <a class="nav_a" href="#">活动中心</a>
+                <a id="lis" class="nav_a" href="#">聚诚品</a>
+                <a class="nav_a" href="#">手游中心</a>
+                <a class="nav_a" href="#">聚豆商城</a>
+                <a class="nav_a" href="#">个人中心</a>
+                <a class="nav_a" href="./che.html"><i class="iconfont icon-gouwu3"></i>购物车</a>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="edition_con sec_con">
+            <div class="sec1">
+                <div class="lb_l">
+                    <ul id="yx_list">
+                        <li><a href="#"><em class="iconfont "></em>热门游戏</a></li>
+                        <li><a href="#"><em class="iconfont "></em>角色扮演</a></li>
+                        <li><a href="#"><em class="iconfont "></em>竞技游戏</a></li>
+                        <li><a href="#"><em class="iconfont "></em>休闲游戏</a></li>
+                        <li><a href="#"><em class="iconfont "></em>网页游戏</a></li>
+                    </ul>
+                    <div class="list"></div>
+                </div>
+                <div class="lb_c">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="../img/lb1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/lb2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/lb3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/lb4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="../img/lb5.jpg" alt=""></div>
+                        </div>
+                        <!-- 分页器 -->
+                        <div class="swiper-pagination"></div>
+                        <!-- 导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="lb_r">
+                    <div class="login">
+                        <img src="../img/default.gif" alt="">
+                        <p>你还未登录,<a href="./denglu.html">立即登录</a>购买超值商品</p>
+                    </div>
+                    <div class="recommend">
+                        <h5 class="tit">推荐游戏</h5>
+                        <div class="gm">
+                            <div class="tjy">
+                                <img src="../img/cf.jpg" alt="">
+                                <p>穿越火线</p>
+                            </div>
+                            <div class="tjy">
+                                <img src="../img/lol.jpg" alt="">
+                                <p>英雄联盟</p>
+                            </div>
+                            <div class="tjy">
+                                <img src="../img/cf.jpg" alt="">
+                                <p>穿越火线</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <p class="tit">
+                            <span>公告</span>
+                            <span>更多</span>
+                        </p>
+                        <p class="not">LOL LOL LOL</p>
+                        <p class="not">CF CF CF </p>
+                        <p class="not">LOL LOL LOL</p>
+                        <p class="not">DNF DNF DNF</p>
+                        <p class="not">LOL LOL LOL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_l">
+                    <div class="sec2_l_tit">
+                        <em class="iconfont icon-shijian2"></em>
+                        <h3>热卖推荐</h3>
+                    </div>
+                    <div class="sec2_l_con">
+                        <div class="sec2_l_cons">
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]灵能特工 : 慎</p>
+                                    <div class="sp">Q币价<span>79.00 QB</span>
+                                    </div>
+                                    <button class="qg">立即抢购</button>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]灵能特工 : 慎</p>
+                                    <div class="sp">Q币价<span>79.00 QB</span>
+                                    </div>
+                                    <button class="qg">立即抢购</button>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]灵能特工 : 慎</p>
+                                    <div class="sp">Q币价<span>79.00 QB</span>
+                                    </div>
+                                    <button class="qg">立即抢购</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec2_l_cons">
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]灵能特工 : 慎</p>
+                                    <div class="sp">Q币价<span>79.00 QB</span>
+                                    </div>
+                                    <button class="qg">立即抢购</button>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]灵能特工 : 慎</p>
+                                    <div class="sp">Q币价<span>79.00 QB</span>
+                                    </div>
+                                    <button class="qg">立即抢购</button>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]灵能特工 : 慎</p>
+                                    <div class="sp">Q币价<span>79.00 QB</span>
+                                    </div>
+                                    <button class="qg">立即抢购</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_r">
+                    <div class="r_tit">
+                        <em class="iconfont icon-liwu"></em>
+                        <span>每日惊喜</span>
+                    </div>
+                    <div id="ms">
+                        <img src="../img/td1.jpg" alt="">
+                        <div class="ms">
+                            <i>距秒杀结束</i><br>
+                            <div class="ms_d"></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_l">
+                    <div class="sec2_l_tit">
+                        <em class="iconfont icon-shijian2"></em>
+                        <h3>猜你喜欢</h3>
+                    </div>
+                    <div class="sec2_l_con">
+                        <div class="sec2_l_cons sec3">
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]<br>灵能特工 <br> : 维克托</p>
+                                    <div class="sp">商城价<span>179.00 QB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]<br>灵能特工 <br> : 维克托</p>
+                                    <div class="sp">商城价<span>179.00 QB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]<br>灵能特工 <br> : 维克托</p>
+                                    <div class="sp">商城价<span>179.00 QB</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]<br>灵能特工 <br> : 维克托</p>
+                                    <div class="sp">商城价<span>179.00 QB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]<br>灵能特工 <br> : 维克托</p>
+                                    <div class="sp">商城价<span>179.00 QB</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_r">
+                    <div class="r_tit">
+                        <em class="iconfont icon-liwu"></em>
+                        <span>每日签到</span>
+                    </div>
+                    <div class="qian">
+                        <div class="qd">
+                            <i class="iconfont icon-qiandao"></i>
+                            <p>我要签到</p>
+                        </div>
+                        <p class="jrqd">今日签到可获得5聚豆</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2">
+                <div class="sec2_l">
+                    <div class="sec2_l_tit">
+                        <em class="iconfont icon-saoyisao20
+                        "></em>
+                        <h3>精彩活动</h3>
+                    </div>
+                    <div class="hd">
+                        <div class="img_box">
+                            <div class="box">
+                                <a href="#"><img src="../img/hd1.jpg" alt=""></a>
+                                <a href="#"><img src="../img/hd2.jpg" alt=""></a>
+                                <a href="#"><img src="../img/hd3.jpg" alt=""></a>
+                            </div>
+                            <div class="box">
+                                <a href="#"><img src="../img/hd4.jpg" alt=""></a>
+                                <a href="#"><img src="../img/hd5.jpg" alt=""></a>
+                                <a href="#"><img src="../img/hd6.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2 lol">
+                <div class="lol_l">
+                    <div class="sec_lol">
+                        <em class="iconfont icon-liwu"></em>
+                        <span>英雄联盟专区</span>
+                    </div>
+                    <div class="lolImg">
+                        <a href="https://daoju.qq.com/lol/"><img src="../img/lol0.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sec2_l">
+                    <div class="sec2_l_tit"></div>
+                    <div class="sec2_l_con sec5">
+                        <div class="sec2_l_cons cons1">
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec2_l_cons cons2">
+                            <div class="goods">
+                                <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/LOL2.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[英雄联盟]地狱火 : 阿木木</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_r">
+                    <div class="ph1">
+                        <p class="ph01">排行01</p>
+                        <p>假面女皇 伊芙琳<span>30.00QB</span></p>
+                        <ol><img src="../img/LOL4.jpg" alt=""></ol>
+                    </div>
+                    <div class="pho">
+                        <ul>
+                            <p class="ph01">02</p>
+                            <p>西部牛仔 亚索<span>69.00QB</span></p>
+                            <li><img src="../img/LOL15.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">03</p>
+                            <p>钓鱼宗师 贾克斯<span>10.00QB</span></p>
+                            <li><img src="../img/LOL16.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">04</p>
+                            <p>灵魂守卫 乌迪尔<span>199.00QB</span></p>
+                            <li><img src="../img/LOL17.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">05</p>
+                            <p>光执事 伊泽瑞尔<span>49.00QB</span></p>
+                            <li><img src="../img/LOL18.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2 lol">
+                <div class="lol_l">
+                    <div class="sec_lol">
+                        <em class="iconfont icon-liwu"></em>
+                        <span>CF专区</span>
+                    </div>
+                    <div class="lolImg">
+                        <a href="https://daoju.qq.com/cf/"><img src="../img/cf0.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sec2_l">
+                    <div class="sec2_l_tit"></div>
+                    <div class="sec2_l_con sec5">
+                        <div class="sec2_l_cons cons1">
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf1.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf3.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf4.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec2_l_cons cons2">
+                            <div class="goods">
+                                <img src="../img/cf5.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf7.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf8.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_r">
+                    <div class="ph1">
+                        <p class="ph01">排行01</p>
+                        <p>胜负清零<span>30.00QB</span></p>
+                        <ol><img src="../img/cf9.jpg" alt=""></ol>
+                    </div>
+                    <div class="pho">
+                        <ul>
+                            <p class="ph01">02</p>
+                            <p>英雄-葵<br><span>69.00QB</span></p>
+                            <li><img src="../img/cf4.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">03</p>
+                            <p>6号包<br><span>10.00QB</span></p>
+                            <li><img src="../img/cf7.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">04</p>
+                            <p>工具钳<br><span>199.00QB</span></p>
+                            <li><img src="../img/cf10.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">05</p>
+                            <p>dsr-1 <br><span>49.00QB</span></p>
+                            <li><img src="../img/cf2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2 lol">
+                <div class="lol_l">
+                    <div class="sec_lol">
+                        <em class="iconfont icon-liwu"></em>
+                        <span>剑灵专区</span>
+                    </div>
+                    <div class="lolImg">
+                        <img src="../img/剑灵_03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="sec2_l">
+                    <div class="sec2_l_tit"></div>
+                    <div class="sec2_l_con sec5">
+                        <div class="sec2_l_cons cons1">
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf1.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf3.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf4.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec2_l_cons cons2">
+                            <div class="goods">
+                                <img src="../img/cf5.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf7.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf8.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_r">
+                    <div class="ph1">
+                        <p class="ph01">排行01</p>
+                        <p>胜负清零<span>30.00QB</span></p>
+                        <ol><img src="../img/cf9.jpg" alt=""></ol>
+                    </div>
+                    <div class="pho">
+                        <ul>
+                            <p class="ph01">02</p>
+                            <p>英雄-葵<br><span>69.00QB</span></p>
+                            <li><img src="../img/cf4.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">03</p>
+                            <p>6号包<br><span>10.00QB</span></p>
+                            <li><img src="../img/cf7.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">04</p>
+                            <p>工具钳<br><span>199.00QB</span></p>
+                            <li><img src="../img/cf10.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">05</p>
+                            <p>dsr-1 <br><span>49.00QB</span></p>
+                            <li><img src="../img/cf2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sec2 lol">
+                <div class="lol_l">
+                    <div class="sec_lol">
+                        <em class="iconfont icon-liwu"></em>
+                        <span>QQ飞车专区</span>
+                    </div>
+                    <div class="lolImg">
+                        <a href="https://daoju.qq.com/speed/"><img src="../img/index_speed.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="sec2_l">
+                    <div class="sec2_l_tit"></div>
+                    <div class="sec2_l_con sec5">
+                        <div class="sec2_l_cons cons1">
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf1.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf2.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf3.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                    <img src="../img/cf4.jpg" alt="" class="g_img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sec2_l_cons cons2">
+                            <div class="goods">
+                                <img src="../img/cf5.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf6.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf7.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="goods">
+                                <img src="../img/cf8.jpg" alt="" class="g_img">
+                                <div class="goods_msg">
+                                    <p>[穿越火线]</p>
+                                    <div class="sp">
+                                        <span>微信价:79.00</span>
+                                        <p>Q币价:79.00 QB</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec2_r">
+                    <div class="ph1">
+                        <p class="ph01">排行01</p>
+                        <p>胜负清零<span>30.00QB</span></p>
+                        <ol><img src="../img/cf9.jpg" alt=""></ol>
+                    </div>
+                    <div class="pho">
+                        <ul>
+                            <p class="ph01">02</p>
+                            <p>英雄-葵<br><span>69.00QB</span></p>
+                            <li><img src="../img/cf4.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">03</p>
+                            <p>6号包<br><span>10.00QB</span></p>
+                            <li><img src="../img/cf7.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">04</p>
+                            <p>工具钳<br><span>199.00QB</span></p>
+                            <li><img src="../img/cf10.jpg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <p class="ph01">05</p>
+                            <p>dsr-1 <br><span>49.00QB</span></p>
+                            <li><img src="../img/cf2.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="lbb">
+                <a href="#"><img src="../img/lbb1.jpg" alt=""></a>
+                <a href="#"><img src="../img/lbb2.jpg" alt=""></a>
+                <a href="#"><img src="../img/lbb3.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="edition_con">
+            <ol>
+                <div class="foot1">
+                    <div class="ic">
+                        <i class="iconfont icon-wode1"></i>
+                    </div>
+                    <ul>
+                        <li>我是新手</li>
+                        <li>什么是道聚城</li>
+                        <li>如何购买</li>
+                        <li>如何赠送</li>
+                        <li>如何获取聚豆</li>
+                    </ul>
+                </div>
+                <div class="foot1">
+                    <div class="ic">
+                        <i class="iconfont icon-wode1"></i>
+                    </div>
+                    <ul>
+                        <li>我是新手</li>
+                        <li>什么是道聚城</li>
+                        <li>如何购买</li>
+                        <li>如何赠送</li>
+                        <li>如何获取聚豆</li>
+                    </ul>
+                </div>
+                <div class="foot1">
+                    <div class="ic">
+                        <i class="iconfont icon-wode1"></i>
+                    </div>
+                    <ul>
+                        <li>我是新手</li>
+                        <li>什么是道聚城</li>
+                        <li>如何购买</li>
+                        <li>如何赠送</li>
+                        <li>如何获取聚豆</li>
+                    </ul>
+                </div>
+                <div class="foot1">
+                    <div class="ic">
+                        <i class="iconfont icon-wode1"></i>
+                    </div>
+                    <ul>
+                        <li>我是新手</li>
+                        <li>什么是道聚城</li>
+                        <li>如何购买</li>
+                        <li>如何赠送</li>
+                        <li>如何获取聚豆</li>
+                    </ul>
+                </div>
+                <div class="foot1">
+                    <div class="ic">
+                        <i class="iconfont icon-wode1"></i>
+                    </div>
+                    <ul>
+                        <li>我是新手</li>
+                        <li>什么是道聚城</li>
+                        <li>如何购买</li>
+                        <li>如何赠送</li>
+                        <li>如何获取聚豆</li>
+                    </ul>
+                </div>
+                <div class="foot1">
+
+                    <ul class="ewm">
+                        <img src="../img/wechatdjc.png" alt="">
+                        <img src="../img/wechatdjc.png" alt="">
+                    </ul>
+                </div>
+            </ol>
+            <div class="foot2">
+                <p>腾讯娱乐腾讯娱乐腾讯娱乐腾讯娱乐腾讯娱乐腾讯娱乐腾讯娱乐</p>
+                <p>COPY &copy; 1998-2020</p>
+                <p>腾讯公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        //   direction: 'vertical', // 垂直切换选项
+        autoplay: {
+            autoplay: true,
+            delay: 2500,
+        },
+        loop: true,
+        // 分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (index + 1) + '</span>';
+            },
+        },
+        // 前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    })
+</script>
+
+<script>
+    console.log($("#lis"));
+    $("#lis").click(function () {
+        $(location).attr('href', "./list.html");
+    })
+</script>
+
+
+</html>
